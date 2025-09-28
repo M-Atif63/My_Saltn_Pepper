@@ -24,7 +24,7 @@ body{
 .img{
     position: absolute;
     top: 10px;
-    left: 70px;
+    left: 110px;
 }
 
 .list>ul{
@@ -35,9 +35,9 @@ body{
     color: #fff;
     display: flex;
     flex-direction: row;
+    font-family: poppins;
+    font-size: 16px;
     gap: 30px;
-    font-family: georgia;
-    font-size: 18px;
 }
 a{
     color: #fff;
@@ -49,8 +49,8 @@ a:hover{
 }
 .button{
     position: absolute;
-    top: 20px;
-    right: 150px;
+    top: 22px;
+    right: 70px;
     width: 145px;
     height: 45px;
     background-color: black;
@@ -59,15 +59,16 @@ a:hover{
     flex-direction: column;
 }
 .btn{
-    padding-right: 29px;
-    background-color: brown;
+    padding-top: 07px;
+    padding-right: 35px;
+    background-color: #ed1c24;
     width: 145px;
     height: 45px;
     border-radius: 35px;
     border: none;
     color: #fff;
-    font-family: cambria;
-    font-size: 14px;
+    font-family: poppins;
+    font-size: 13px;
     flex: 0.2;
     cursor: pointer;
     transition: all ease 0.3s;
@@ -81,8 +82,8 @@ a:hover{
 .arrow{
     position: absolute;
     z-index: 1;
-    top: 13px;
-    right: 17px;
+    top: 12px;
+    right: 15px;
     background-color: #fff;
     width: 20px;
     height: 20px;
@@ -204,7 +205,7 @@ a:hover{
 .button{
     position: absolute;
     top: 20px;
-    right: 70px;
+    right: 60px;
     width: 145px;
     height: 45px;
     background-color: black;
@@ -266,7 +267,7 @@ a:hover{
 .list>ul{
     position: absolute;
     top: 40px;
-    left: 240px;
+    left: 260px;
     list-style-type: none;
     color: #fff;
     display: flex;
@@ -286,7 +287,7 @@ a:hover{
 .button{
     position: absolute;
     top: 20px;
-    right: 40px;
+    right: 50px;
     width: 145px;
     height: 45px;
     background-color: black;
@@ -294,14 +295,112 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
-/* .impcon3{
+.impcon3{
     width: 100%;
-    background-color: none;
+    background-color: black;
     height: 300px;
-    display: flex;
-    align-items: center;
+    /* align-items: center;
     gap:100px;
     flex-wrap: wrap;
+    flex-direction: column; */
+}
+.orde1{
+    position: absolute;
+       top: ;
+}
+}
+@media only screen and (max-width: 890px){
+           
+.list>ul{
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    list-style-type: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: georgia;
+    font-size: 18px;   
+}
+    a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: lightblue;
+}
+.button{
+    position: absolute;
+    top: 20px;
+    right:43px;
+    width: 145px;
+    height: 45px;
+    background-color: black;
+    border-radius: 60px;
+    display: flex;
     flex-direction: column;
-} */
+}
+}
+
+@media only screen and (max-width: 855px){
+    .list>ul{
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    list-style-type: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: georgia;
+    font-size: 18px;   
+}
+    a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: lightblue;
+}
+.button{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 135px;
+    height: 45px;
+    background-color: black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+}
+    .btn{
+    padding-right: 35px;
+    background-color: brown;
+    width: 125px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    color: #fff;
+    font-family: cambria;
+    font-size: 14px;
+    flex: 0.2;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.arrow{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 15px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    flex: 0.8;
+    cursor: pointer;
+}
+
 }
