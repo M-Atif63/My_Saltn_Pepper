@@ -3,23 +3,27 @@ body{
 }
 @media only screen and (min-width: 576px){
     .main{
-        height: 330vh;
-        background-color: black;
+        height: 351vh;
+        background-color:black;
     }
     .navbar{
         height: 85px;
         width: 100%;
         background-color: black;
         border-bottom: 1px solid rgb(255,255,255,0.1);
+        position: relative;
     }
     .navimg{
+        position: absolute;
+        top: 10px;
+        left: 110px;
         background-color: black;
         height: 70px;
-        margin-left: 110px;
+        
     }
     .navlist{
         position: absolute;
-        top: 40px;
+        top: 30px;
         right: 356px;
         height: 30px;
         background-color: black;
@@ -33,7 +37,6 @@ body{
         list-style-type: none;
     }
     a{
-       
         color: white;
         text-decoration: none;
     }
@@ -41,18 +44,18 @@ body{
         color: lightblue;
     }
     .nav-btn{
-        margin-top: 0px;
-        margin-right: 70px;
         height: 45px;
         width: 145px;
         background-color: black;
         border-radius: 50px;
-        position: relative;
+        position: absolute;
+        top: 22px;
+        right: 70px;
     }
-    .btn{
-        padding-top: 07px;
+    .btn{position: relative;
+        /* padding-top: 0px; */
         font-family: poppins;
-        font-size: 13px;
+        font-size: 14px;
         padding-right: 35px;
         height: 45px;
         width: 145px;
@@ -60,21 +63,30 @@ body{
         border: none;
         border-radius: 50px;
         color: white;
-    }
-    .nav-btn>img{
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        right: 15px;
-        top: 12px;
+        transition: all ease 0.2s;
     }
     .btn:hover{
         background-color: rgb(255,255,255,0.1);!important
-        background-color: rgba(43, 0, 255, 0.336);
-        color: white;
+        color:white;
+        cursor:pointer;
+        border: 1px solid rgb(255,255,255,0.2);
     }
-
-
+    .btn:active{
+    scale: 0.9;
+}
+    .nav-btn>a>.arrow{
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        right: 15px;
+        top: 12px;
+        transition: all ease 0.2s;
+    }
+    .arrow:active{
+        scale: 0.9;
+    }
+    
     .bodyimg{
         margin-top: 42px;
         height: 100vh;
@@ -208,32 +220,209 @@ body{
         font-weight: 200;
         font-size: 15px;
     }
-6
-    .footer{
-        padding: relative;
-        width: 1350px;
-        height: 650px;
-        background-color: rgb(255,255,255,0.1);
+
+
+
+    footer{
+       width: 1350px;
+       height: 540px;
+       background-color: rgb(255,255,255,0.1);
+       position: relative;
     }
 
-    .foot-p1>img{
-       position: absolute;
-       left: 20px;
-       margin-top: 70px;
-    }
-
-    .foot-p1>p{
+    .foot-p1-img{
         position: absolute;
-        left: 20px;
-        margin-top: 100px;
-        /* height: 530px; */
-        /* width: 400px; */
+        top: 100px;
+        left: 70px;
+        display: flex;
+    }
+    
+    .foot-p1-p1{
+        position: absolute;
+        top: 170px;
+        left: 70px;
         color: white;
-        word-spacing: 0.3rem;
-        font-size: 15px;
-        /* font-family: poppins; */
-        margin-top: 20px;
+        font-family: poppins;
+        font-size: 16px;
+        font-weight: 200;
+        word-spacing: 2px;
+    }
+    .foot-p1-p2{
+        position: absolute;
+        left: 100px;
+        top: 440px;
+    }
+    .foot-p1-p2>span{
+        font-weight: 400;
+        word-spacing: 35px;
     }
 
 
+
+.foot-p2-h1{
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    color: #fff;
+    font-family: cambria;
+    font-weight: 700;
+    font-size: 24px;
+}
+.foot-p2-ul1{
+    position: absolute;
+    top: 150px;
+    left: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+.foot-p3-h1{
+    position: absolute;
+    top: 70px;
+    right:460px;
+    color: #fff;
+    font-family: cambria;
+    font-weight: 700;
+    font-size: 24px;
+}
+.foot-p3-h2{
+    position: absolute;
+    top: 85px;
+    right: 430px;
+    color: #fff;
+    font-family: cambria;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100px;
+}
+.foot-p3-p1{
+    position: absolute;
+    top: 150px;
+    right: 405px;
+    letter-spacing:1px;
+    line-height: 20px;
+    color: #fff;
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 11px;
+}
+.foot-p3-p2{
+    position: absolute;
+    top: 250px;
+    right: 450px;
+    letter-spacing:1px;
+    line-height: 30px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+}
+.foot-p3-p3{
+    position: absolute;
+    top:355px;
+    right: 450px;
+    color: #fff;
+    font-family: poppins;
+    font-weight: 250;
+    font-size: 12px;
+}
+   
+.foot-p3-h3{
+    position: absolute;
+    top: 390px;
+    right: 420px;
+    font-family: cambria;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+}
+.foot-p3-p4{
+    position: absolute;
+    top: 420px;
+    right: 455px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+
+
+.foot-p4-h1{
+    position: absolute;
+    top: 70px;
+    right:150px;
+    color: #fff;
+    font-family: cambria;
+    font-size: 24px;
+}
+
+.foot-p4-icon1{
+    position: absolute;
+    top: 150px;
+    right: 230px;
+    background-color: #ed1c24;
+    color: #fff;
+    width: 46px;
+    height:46px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    font-size:32px;
+    cursor: pointer;
+}
+
+.foot-p4-icon2{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    background-color: #ed1c24;
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px black;
+    font-size:25px;
+    cursor: pointer;
+}
+.foot-p4-icon3{
+    position: absolute;
+    top: 150px;
+    right: 165px;
+    background-color: #ed1c24;
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px black;
+    font-size:25px;
+    cursor: pointer;
+}
+.foot-p4-icon5{
+    position: absolute;
+    top: 230px;
+    right: 110px;
+}
+.foot-p4-icon6{
+    position: absolute;
+    top: 290px;
+    right: 110px;
+}
 }

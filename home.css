@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
      */
 /* } */
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 576px) {
     .main{
         height: 200vh;
         background-color: rgb(128,128,128,0.3);
@@ -26,11 +26,10 @@ body{
     top: 10px;
     left: 110px;
 }
-
 .list>ul{
     position: absolute;
-    top: 40px;
-    left: 600px;
+    top: 30px;
+    right: 356px;
     list-style-type: none;
     color: #fff;
     display: flex;
@@ -58,8 +57,8 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
-.btn{
-    padding-top: 07px;
+.btn{position: relative;
+    /* padding-top: 0px; */
     padding-right: 35px;
     background-color: #ed1c24;
     width: 145px;
@@ -68,27 +67,28 @@ a:hover{
     border: none;
     color: #fff;
     font-family: poppins;
-    font-size: 13px;
-    flex: 0.2;
+    font-size: 14px;
+    flex: 0.8;
     cursor: pointer;
     transition: all ease 0.3s;
 }
 .btn:hover{
-    background-color: rgb(255, 0, 0,0.7);
+    background-color: rgb(255,255,255,0.1);
+    color: #fff;
+    border: 1px solid rgb(255,255,255,0.1);
 }
 .btn:active{
     scale: 0.9;
 }
 .arrow{
     position: absolute;
-    z-index: 1;
     top: 12px;
     right: 15px;
     background-color: #fff;
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    flex: 0.8;
+    flex: 0.2;
     cursor: pointer;
 }
 
