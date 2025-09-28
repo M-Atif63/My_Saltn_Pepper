@@ -232,7 +232,7 @@ body{
 
     .foot-p1-img{
         position: absolute;
-        top: 100px;
+        top: 70px;
         left: 70px;
         display: flex;
     }
@@ -250,7 +250,7 @@ body{
     .foot-p1-p2{
         position: absolute;
         left: 100px;
-        top: 440px;
+        top: 420px;
     }
     .foot-p1-p2>span{
         font-weight: 400;
